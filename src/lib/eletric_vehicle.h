@@ -4,7 +4,7 @@ class EletricVehicle{
     public:
         EletricVehicle(double miles_per_kwh, double cost_per_kwh) : miles_per_kwh(miles_per_kwh), cost_per_kwh(cost_per_kwh){};
 
-        double trip_cost(double miles){
+        double trip_cost(double miles) const {
             return (miles / miles_per_kwh) * cost_per_kwh;
         }
 
